@@ -1,0 +1,125 @@
+/* Colors */
+:root {
+	--editor-background: #d5a76f;
+	--hover-red: hsla(351, 73%, 43%, 0.5);
+	--base-red: #be1e36;
+	--base-black: #231F20;
+	--red: #b90d49;
+	--green: #06793f;
+	--checkbox-green: #32b976;
+	--blue: #006983;
+	--orange: #ad4200;
+	--purple: #5c2d7e;
+	--gray: #2e4363;
+	--highlighter-yellow: hsla(43, 100%, 45%, 0.6);
+}
+
+/* Editor Text Area */
+.view-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
+	background-color: var(--editor-background);
+	color: var(--base-black);
+}
+/* Caret Color */
+.markdown-source-view.mod-cm6 .cm-content {
+	caret-color: var(--base-black)
+}
+
+/* Note Title */
+.cm-sizer .inline-title {
+	font-family: "Hanimation Arabic";
+	margin: 0 50px 50px;
+	text-align: center;
+	font-weight: 400;
+	color: var(--base-red);
+}
+
+/* Headers */
+.HyperMD-header .cm-header-1, .HyperMD-header .cm-header-2, .HyperMD-header .cm-header-3, .HyperMD-header .cm-header-4, .HyperMD-header .cm-header-5, .HyperMD-header .cm-header-6 {
+	padding-right: 20px;
+	font-family: "Tajawal";
+	font-weight: bold;
+}
+.HyperMD-header .cm-header-1 {
+	color: var(--red);
+}
+.HyperMD-header .cm-header-2 {
+	color: var(--green);
+}
+.HyperMD-header .cm-header-3 {
+	color: var(--blue);
+}
+.HyperMD-header .cm-header-4 {
+	color: var(--orange);
+}
+.HyperMD-header .cm-header-5 {
+	color: var(--purple);
+}
+.HyperMD-header .cm-header-6 {
+	color: var(--gray);
+}
+.cm-s-obsidian .cm-line.HyperMD-header {
+	padding-top: 3px;
+	padding-bottom: 2px;
+}
+
+/* Highlighter */
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
+	background-color: var(--highlighter-yellow);
+	color: var(--base-black);
+	padding: 3px 5px 5px;
+	border-radius: 20px;
+}
+
+/* Outliner Highlight */
+.is-flashing {
+	mix-blend-mode: inherit;
+}
+
+/* Indentation Guides */
+.markdown-source-view.mod-cm6 .cm-indent::before {
+	border-right: 2px solid var(--list-marker-color);
+}
+.markdown-source-view.mod-cm6 .cm-active-indent::before {
+	border-right: 2px solid var(--base-red);
+}
+
+/* Bullet Lists */
+.list-bullet:after {
+	background-color: var(--gray);
+}
+.list-collapse-indicator:hover ~ .list-bullet:after, .cm-fold-indicator:hover ~ .list-bullet:after, .list-collapse-indicator:hover ~ .cm-formatting-list .list-bullet:after, .cm-fold-indicator:hover ~ .cm-formatting-list .list-bullet:after {
+    background-color: var(--list-marker-color-hover);
+    box-shadow: 0 0 0 4px var(--hover-red);
+}
+
+/* Images */
+.internal-embed img {
+	border-radius: 13px;
+	padding: 15px;
+	border: 1px solid var(--base-black);
+}
+
+/* Checkbox */
+input[type=checkbox] {
+    border-radius: 7px;
+    border: 2px solid var(--gray);
+    transition: box-shadow 0.15s ease-in-out;
+}
+input[type=checkbox]:hover {
+	border-color: var(--green);
+}
+input[type=checkbox]:checked {
+    background-color: var(--checkbox-green);
+    border-color: var(--checkbox-green)
+}
+input[type=checkbox]:checked:after {
+    background-color: var(--gray);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"], .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
+    text-decoration: var(--checklist-done-decoration);
+    color: var(--gray);
+}
+input[type=checkbox]:checked:hover {
+    background-color: var(--checkbox-green);
+    border-color: var(--green);
+}

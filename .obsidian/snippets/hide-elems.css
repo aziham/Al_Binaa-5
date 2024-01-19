@@ -1,0 +1,8 @@
+/* Hide vault's name */
+.nav-folder.mod-root > .nav-folder-title {
+	display: none;
+} 
+/* Add margin top to the next container */
+.nav-folder.mod-root > .nav-folder-children {
+	margin-top: 10px;
+}

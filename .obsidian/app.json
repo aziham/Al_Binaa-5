@@ -1,0 +1,16 @@
+{
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "foldHeading": true,
+  "showLineNumber": false,
+  "rightToLeft": true,
+  "spellcheck": false,
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "00. Assets/01. Images",
+  "trashOption": "local",
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "shortest",
+  "promptDelete": false,
+  "showIndentGuide": false,
+  "showInlineTitle": true
+}

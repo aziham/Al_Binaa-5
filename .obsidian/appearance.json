@@ -1,0 +1,15 @@
+{
+  "accentColor": "#791524",
+  "enabledCssSnippets": [
+    "hide-elems",
+    "media-grid",
+    "custom",
+    "custom-editor"
+  ],
+  "cssTheme": "",
+  "theme": "system",
+  "baseFontSize": 20,
+  "baseFontSizeAction": false,
+  "showViewHeader": true,
+  "nativeMenus": false
+}
