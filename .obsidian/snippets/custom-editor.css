@@ -137,3 +137,9 @@ input[type=checkbox]:checked:hover {
     background-color: var(--checkbox-green);
     border-color: var(--green);
 }
+
+/* Iframe */
+iframe {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); 
+	border-radius: 10px;
+}

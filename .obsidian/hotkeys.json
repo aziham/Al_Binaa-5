@@ -24,5 +24,13 @@
       ],
       "key": "Enter"
     }
+  ],
+  "media-extended:get-timestamp": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "R"
+    }
   ]
 }
