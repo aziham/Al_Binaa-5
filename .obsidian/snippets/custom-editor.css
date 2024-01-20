@@ -44,7 +44,7 @@
 
 /* Headers */
 .HyperMD-header .cm-header-1, .HyperMD-header .cm-header-2, .HyperMD-header .cm-header-3, .HyperMD-header .cm-header-4, .HyperMD-header .cm-header-5, .HyperMD-header .cm-header-6 {
-	padding-right: 20px;
+	/* padding-right: 20px; */
 	font-family: "Tajawal";
 	font-weight: bold;
 }

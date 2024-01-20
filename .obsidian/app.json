@@ -1,7 +1,7 @@
 {
   "readableLineLength": true,
   "strictLineBreaks": false,
-  "foldHeading": true,
+  "foldHeading": false,
   "showLineNumber": false,
   "rightToLeft": true,
   "spellcheck": false,
