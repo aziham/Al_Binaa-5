@@ -16,5 +16,13 @@
       ],
       "key": "L"
     }
+  ],
+  "open-with-default-app:open": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "Enter"
+    }
   ]
 }
