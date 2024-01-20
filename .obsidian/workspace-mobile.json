@@ -1,0 +1,99 @@
+{
+  "main": {
+    "id": "672b11e3209fe91f",
+    "type": "split",
+    "children": [
+      {
+        "id": "47dc6db932b60e3d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb242841712e18c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01. المنهاج من ميراث النبوة/01. باب في مرجعية الوحي و شموليته و مركزية التسليم لله ولرسوله.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9b5ff4e0a91ab7fc",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "d4be87afdb1f7ca2",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "1f3725581df8fa8b",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "c2f1659fb09d9126",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "68a2eb68b8e8f364",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "bbc0ec1b11d96e98",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "01. المنهاج من ميراث النبوة/01. باب في مرجعية الوحي و شموليته و مركزية التسليم لله ولرسوله.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false
+    }
+  },
+  "active": "d4be87afdb1f7ca2",
+  "lastOpenFiles": [
+    "00. Assets/02. Documents/00. Minhaj-Noboa.pdf",
+    "01. المنهاج من ميراث النبوة/01. باب في مرجعية الوحي و شموليته و مركزية التسليم لله ولرسوله.md"
+  ]
+}
