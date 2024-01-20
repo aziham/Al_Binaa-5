@@ -70,6 +70,11 @@
 	padding-bottom: 2px;
 }
 
+/* Horizontal Rule */
+.markdown-source-view.mod-cm6 hr {
+	border-color: hsla(345, 6%, 13%, 0.7);
+}
+
 /* Highlighter */
 .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
 	background-color: var(--highlighter-yellow);
