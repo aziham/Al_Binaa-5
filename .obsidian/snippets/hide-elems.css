@@ -2,7 +2,13 @@
 .nav-folder.mod-root > .nav-folder-title {
 	display: none;
 } 
+
 /* Add margin top to the next container */
 .nav-folder.mod-root > .nav-folder-children {
 	margin-top: 10px;
+}
+
+/* Hide status bar */
+.status-bar {
+	display: none;
 }

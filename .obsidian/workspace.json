@@ -32,6 +32,7 @@
       {
         "id": "15e7c0256dd52e97",
         "type": "tabs",
+        "dimension": 50.86206896551724,
         "children": [
           {
             "id": "850bf066a956983f",
@@ -67,11 +68,25 @@
             }
           }
         ]
+      },
+      {
+        "id": "93c3e9768c0ad083",
+        "type": "tabs",
+        "dimension": 49.137931034482754,
+        "children": [
+          {
+            "id": "350b68b925344df4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 261.5,
-    "collapsed": true
+    "width": 279.5
   },
   "right": {
     "id": "c889b41c714da46c",
@@ -126,8 +141,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -143,10 +157,10 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "850bf066a956983f",
+  "active": "ea4e1ad1d25d2552",
   "lastOpenFiles": [
-    "00. Assets/02. Documents/00. Minhaj-Noboa.pdf",
     "01. المنهاج من ميراث النبوة/01. باب في مرجعية الوحي و شموليته و مركزية التسليم لله ولرسوله.md",
+    "00. Assets/02. Documents/00. Minhaj-Noboa.pdf",
     "00. Assets/01. Images/hadith-2.png",
     "00. Assets/02. Documents/01. Preliminary-Schedule.pdf",
     "00. Assets/03. Audios",
