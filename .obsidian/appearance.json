@@ -6,8 +6,8 @@
     "custom",
     "custom-editor"
   ],
-  "cssTheme": "",
-  "theme": "system",
+  "cssTheme": "Things",
+  "theme": "obsidian",
   "baseFontSize": 20,
   "baseFontSizeAction": false,
   "showViewHeader": true,
