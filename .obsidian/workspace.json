@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.5
+    "width": 261.5,
+    "collapsed": true
   },
   "right": {
     "id": "c889b41c714da46c",
@@ -142,7 +143,7 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "ea4e1ad1d25d2552",
+  "active": "850bf066a956983f",
   "lastOpenFiles": [
     "00. Assets/02. Documents/00. Minhaj-Noboa.pdf",
     "01. المنهاج من ميراث النبوة/01. باب في مرجعية الوحي و شموليته و مركزية التسليم لله ولرسوله.md",
