@@ -21,11 +21,12 @@
 /* Editor Text Area */
 .view-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
 	background-color: var(--editor-background);
-	color: var(--base-black);
+	color: #131111;
+	font-family: "Almarai";
 }
 /* Caret Color */
 .markdown-source-view.mod-cm6 .cm-content {
-	caret-color: var(--base-black)
+	caret-color: var(--color-accent);
 }
 
 /* Note Title */
@@ -101,7 +102,10 @@
 	border-right: 2px solid var(--base-red);
 }
 
-/* Bullet Lists */
+/* Lists */
+.cm-s-obsidian .cm-formatting-list {
+	color: var(--gray);
+}
 .list-bullet:after {
 	background-color: var(--gray);
 }

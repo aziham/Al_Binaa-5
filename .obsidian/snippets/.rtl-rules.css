@@ -1,27 +1,27 @@
-/* .nav-folder-children .tree-item-self {
+.nav-folder-children .tree-item-self {
 	flex-direction: row-reverse;
-} */
+}
 
-/* .nav-folder-children .tree-item-self:has(.nav-file-tag) > .nav-file-title-content {
+.nav-folder-children .tree-item-self:has(.nav-file-tag) > .nav-file-title-content {
     direction: ltr;
 	padding-right: 0;
-} */
+}
 
-/* .nav-folder-children .tree-item-self:has(.nav-file-tag) {
+.nav-folder-children .tree-item-self:has(.nav-file-tag) {
 	flex-direction: row;
 	justify-content: flex-end;
-} */
+}
 
-/* .nav-folder-children .nav-folder .nav-folder-children {
+.nav-folder-children .nav-folder .nav-folder-children {
 	margin-right: 16px !important;
-} */
+}
 
-/* .nav-folder .tree-item-self:not([data-path="00. Assets"]) {
+.nav-folder .tree-item-self:not([data-path="00. Assets"]) {
 	direction: rtl;
-} */
+}
 
-/* .nav-folder.mod-root .nav-folder > .nav-folder-children {
+.nav-folder.mod-root .nav-folder > .nav-folder-children {
 	padding-right: var(--nav-item-children-padding-left);
 	border-left: none;
 	border-right: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
-} */
+}
