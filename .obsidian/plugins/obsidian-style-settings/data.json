@@ -1,5 +1,5 @@
 {
   "things-style@@floating-button-off": true,
-  "things-style@@active-line": false,
+  "things-style@@active-line": true,
   "things-style@@mobile-black-background": false
 }

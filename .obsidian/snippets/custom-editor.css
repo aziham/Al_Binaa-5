@@ -143,3 +143,10 @@ iframe {
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); 
 	border-radius: 10px;
 }
+
+/* Focus active line */
+body.active-line .cm-active:not(.HyperMD-header, .HyperMD-codeblock)::before,
+body.active-line .cm-active.HyperMD-quote::before {
+	left: initial;
+	right: -0.7em;
+}
