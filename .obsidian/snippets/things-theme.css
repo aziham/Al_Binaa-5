@@ -1,0 +1,116 @@
+/*───────────────────────────────────────────────────────
+THINGS
+Version 2.1.20
+Created by @colineckert
+
+Readme:
+https://github.com/colineckert/obsidian-things
+
+- PS: This is a custom version of the theme with the purpose of keeping a minimal styling
+
+────────────────────────────────────────────────────── */
+
+/* ─────────────────────────────────────────────────── */
+/* Main Theme Styling */
+/* ─────────────────────────────────────────────────── */
+
+@charset "UTF-8";
+body {
+  /* Colors */
+  --base-h: 212; /* Base hue */
+  --base-s: 15%; /* Base saturation */
+  --base-d: 13%; /* Base lightness Dark Mode  - 0 is black */
+  --base-l: 97%; /* Base lightness Light Mode  - 100 is white */
+  --accent-h: 215; /* Accent hue */
+  --accent-s: 75%; /* Accent saturation */
+  --accent-d: 70%; /* Accent lightness Dark Mode */
+  --accent-l: 60%; /* Accent lightness Light Mode */
+}
+
+/* COLOR SCHEMES
+────────────────────────────────────────────────────── */
+
+.theme-dark,
+body.theme-dark.is-mobile {
+  color-scheme: dark;
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-orange: #e9973f;
+  --color-yellow: #e0de71;
+  --color-cyan: #53dfdd;
+  --color-blue: #027aff;
+  --color-purple: #a882ff;
+  --color-pink: #fa99cd;
+  --color-base-00: #1c2127; /* main editor window */
+  --color-base-10: #282c34; /* code blocks */
+  --color-base-20: #181c20; /* top unselected unfocused nav */
+  --color-base-25: #2c313c;
+  --color-base-30: #35393e;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555;
+  --color-base-50: #666; /* unfocused text */
+  --color-base-60: #999;
+  --color-base-70: #bababa;
+  --color-base-100: #dadada;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 3.8%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 3.8%)
+  );
+  --titlebar-background-focused: var(--color-base-10);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+
+  --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
+  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
+  --text-formatted: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-d) + 50%)
+  );
+
+  --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
+  --text-accent-hover: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-d) + 12%)
+  );
+}
+
+/* Make exported PDFs render correctly */
+@media print {
+  .theme-dark {
+    --highlight-mix-blend-mode: darken;
+    --color-base-30: #ebedf0;
+    --h1-color: var(--color-base-00);
+  }
+}
+
+/* Code blocks horizontal scroll */
+/* .markdown-reading-view .markdown-preview-view pre:not(.frontmatter) code {
+  white-space: pre;
+} */

@@ -4,9 +4,10 @@
     "hide-elems",
     "media-grid",
     "custom",
-    "custom-editor"
+    "custom-editor",
+    "things-theme"
   ],
-  "cssTheme": "Things",
+  "cssTheme": "",
   "theme": "obsidian",
   "baseFontSize": 20,
   "baseFontSizeAction": false,

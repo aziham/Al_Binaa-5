@@ -6,11 +6,12 @@
   "rightToLeft": true,
   "spellcheck": false,
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "00. Assets/01. Images",
+  "attachmentFolderPath": "0.1. Assets/01. Images",
   "trashOption": "local",
   "alwaysUpdateLinks": true,
   "newLinkFormat": "shortest",
   "promptDelete": false,
   "showIndentGuide": false,
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "livePreview": true
 }

@@ -9,9 +9,9 @@
 	--base-red: #be1e36;
 	--base-black: #231F20;
 	--red: #b90d49;
-	--green: #06793f;
+	--green: #025e30;
 	--checkbox-green: #32b976;
-	--blue: #006983;
+	--blue: #005a70;
 	--orange: #ad4200;
 	--purple: #5c2d7e;
 	--gray: #2e4363;
@@ -67,13 +67,16 @@
 	color: var(--gray);
 }
 .cm-s-obsidian .cm-line.HyperMD-header {
-	padding-top: 3px;
+	/* padding-top: 3px; */
 	padding-bottom: 2px;
 }
 
 /* Horizontal Rule */
 .markdown-source-view.mod-cm6 hr {
 	border-color: hsla(345, 6%, 13%, 0.7);
+}
+.cm-hr {
+	color: var(--base-black);
 }
 
 /* Highlighter */
@@ -87,6 +90,7 @@
 /* Outliner Highlight */
 .is-flashing {
 	mix-blend-mode: inherit;
+	color: var(--base-black);
 }
 
 /* Indentation Guides */
@@ -143,10 +147,37 @@ iframe {
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); 
 	border-radius: 10px;
 }
+.cm-qualifier, .cm-string, .cm-string-2 {
+	color: var(--gray);
+}
+.cm-tag {
+	color: var(--base-red);
+}
+.cm-attribute {
+	color: var(--green);
+}
+
+/* Links */
+.cm-s-obsidian span.cm-url,
+.cm-s-obsidian span.cm-url:hover {
+	color: var(--gray);
+}
+.cm-s-obsidian span.cm-hmd-internal-link,
+.cm-s-obsidian span.cm-hmd-internal-link:hover,
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-link:hover,
+.markdown-source-view.mod-cm6 .cm-link .cm-underline:hover {
+	color: var(--base-red);
+}
 
 /* Focus active line */
-body.active-line .cm-active:not(.HyperMD-header, .HyperMD-codeblock)::before,
-body.active-line .cm-active.HyperMD-quote::before {
-	left: initial;
-	right: -0.7em;
+body .cm-active::before,
+body .cm-active.HyperMD-quote::before {
+  content: '';
+  height: 100%;
+  position: absolute;
+  right: -0.7em;
+  border-left: 3px solid var(--color-accent);
+  border-radius: 10px 0 0 10px;
+  opacity: 0.85;
 }

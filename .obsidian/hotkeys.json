@@ -17,20 +17,21 @@
       "key": "L"
     }
   ],
-  "open-with-default-app:open": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "Enter"
-    }
-  ],
   "media-extended:get-timestamp": [
     {
       "modifiers": [
         "Alt"
       ],
       "key": "R"
+    }
+  ],
+  "open-with-default-app:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Enter"
     }
   ]
 }
