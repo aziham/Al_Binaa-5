@@ -3333,7 +3333,7 @@ class ObsidianOutlinerPlugin extends obsidian.Plugin {
                 new ListsFoldingCommands(this, this.obsidianSettings),
                 // features based on settings.keepCursorWithinContent
                 new EditorSelectionsBehaviourOverride(this, this.settings, this.parser, this.operationPerformer),
-                new ArrowLeftAndCtrlArrowLeftBehaviourOverride(this, this.settings, this.imeDetector, this.operationPerformer),
+                // new ArrowLeftAndCtrlArrowLeftBehaviourOverride(this, this.settings, this.imeDetector, this.operationPerformer),
                 new BackspaceBehaviourOverride(this, this.settings, this.imeDetector, this.operationPerformer),
                 new MetaBackspaceBehaviourOverride(this, this.settings, this.imeDetector, this.operationPerformer),
                 new DeleteBehaviourOverride(this, this.settings, this.imeDetector, this.operationPerformer),
