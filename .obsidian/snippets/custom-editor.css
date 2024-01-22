@@ -74,6 +74,10 @@
 .HyperMD-header .cm-header-6 {
 	color: var(--gray);
 }
+.markdown-source-view.mod-cm6 .HyperMD-header:hover > .cm-fold-indicator .collapse-indicator,
+.markdown-source-view.mod-cm6 .HyperMD-header > .cm-fold-indicator.is-collapsed .collapse-indicator {
+	display: none;
+}
 
 /* Horizontal Rule */
 .markdown-source-view.mod-cm6 hr {
