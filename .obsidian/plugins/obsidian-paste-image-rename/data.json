@@ -1,0 +1,10 @@
+{
+  "imageNamePattern": "minhaj-bab-1-hadith-1",
+  "dupNumberAtStart": false,
+  "dupNumberDelimiter": "-",
+  "dupNumberAlways": false,
+  "autoRename": false,
+  "handleAllAttachments": false,
+  "excludeExtensionPattern": "",
+  "disableRenameNotice": false
+}
