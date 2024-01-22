@@ -75,5 +75,8 @@
       "key": "Enter"
     }
   ],
-  "editor:open-link-in-new-leaf": []
+  "editor:open-link-in-new-leaf": [],
+  "editor:follow-link": [],
+  "editor:delete-paragraph": [],
+  "obsidian-editor-shortcuts:selectLine": []
 }
