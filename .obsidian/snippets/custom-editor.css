@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
 
-/* Colors */
 :root {
+	/* Colors */
 	--editor-background: #d5a76f;
 	--hover-red: hsla(351, 73%, 43%, 0.5);
 	--base-red: #be1e36;
@@ -16,6 +16,10 @@
 	--purple: #5c2d7e;
 	--gray: #2e4363;
 	--highlighter-yellow: hsla(43, 100%, 45%, 0.6);
+	--ayah-callout-color: 173, 66, 0;
+
+	/* Cursor */
+	--custom-cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(45,65,100)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-cursor"><path d="M17 22h-1a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h1"/><path d="M7 22h1a4 4 0 0 0 4-4v-1"/><path d="M7 2h1a4 4 0 0 1 4 4v1"/></svg>') 10 0, text;
 }
 
 /* Editor Text Area */
@@ -23,6 +27,8 @@
 	background-color: var(--editor-background);
 	color: #131111;
 	font-family: "Almarai";
+	cursor: var(--custom-cursor);
+	--file-line-width: 710px; /*Readable line length*/
 }
 /* Caret Color */
 .markdown-source-view.mod-cm6 .cm-content {
@@ -51,6 +57,7 @@
 }
 .HyperMD-header .cm-header-1 {
 	color: var(--red);
+	text-decoration: underline;
 }
 .HyperMD-header .cm-header-2 {
 	color: var(--green);
@@ -66,10 +73,6 @@
 }
 .HyperMD-header .cm-header-6 {
 	color: var(--gray);
-}
-.cm-s-obsidian .cm-line.HyperMD-header {
-	/* padding-top: 3px; */
-	padding-bottom: 2px;
 }
 
 /* Horizontal Rule */
@@ -117,8 +120,8 @@
 /* Images */
 .internal-embed img {
 	border-radius: 13px;
-	padding: 15px;
 	border: 1px solid var(--base-black);
+	margin-top: 5px;
 }
 
 /* Checkbox */
@@ -166,11 +169,20 @@ iframe {
 .cm-s-obsidian span.cm-url:hover {
 	color: var(--gray);
 }
+.markdown-source-view.mod-cm6 .is-unresolved {
+	color: darkslategray;
+}
+.cm-s-obsidian span.cm-footref, .cm-s-obsidian span.cm-blockid {
+	color: var(--base-red);
+}
 .cm-s-obsidian span.cm-hmd-internal-link,
 .cm-s-obsidian span.cm-hmd-internal-link:hover,
 .cm-s-obsidian span.cm-link,
 .cm-s-obsidian span.cm-link:hover,
-.markdown-source-view.mod-cm6 .cm-link .cm-underline:hover {
+.markdown-source-view.mod-cm6 .cm-link .cm-underline:hover,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover,
+.markdown-source-view.mod-cm6 .cm-link:hover,
+.markdown-source-view.mod-cm6 .is-unresolved:hover {
 	color: var(--base-red);
 }
 
@@ -184,4 +196,27 @@ body .cm-active.HyperMD-quote::before {
   border-left: 3px solid var(--color-accent);
   border-radius: 10px 10px 0 0;
   opacity: 0.85;
+}
+
+/* Callouts */
+.callout[data-callout="ayah"] {
+	--callout-color: var(--ayah-callout-color);
+	border: solid var(--orange) 1px;
+	border-radius: 13px;
+}
+.markdown-source-view.mod-cm6 .cm-embed-block:has(.callout[data-callout="ayah"]) {
+	padding-top: 10px;
+}
+.markdown-source-view.mod-cm6 .cm-embed-block:has(.callout[data-callout="ayah"]):hover {
+	box-shadow: none;
+	cursor: inherit;
+}
+.callout[data-callout="ayah"] .callout-title {
+	display: none;
+}
+.markdown-source-view.mod-cm6 .cm-embed-block:has(.callout[data-callout="ayah"]) svg {
+	stroke: var(--gray);
+}
+.markdown-source-view.mod-cm6 .cm-embed-block:has(.callout[data-callout="ayah"]) .edit-block-button {
+	top: 14px;
 }
