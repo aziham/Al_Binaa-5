@@ -124,7 +124,8 @@
     background-color: var(--list-marker-color-hover);
     box-shadow: 0 0 0 4px var(--hover-red);
 }
-.HyperMD-list-line:not(.HyperMD-list-line-1) + .HyperMD-list-line-1 {
+.HyperMD-list-line:not(.HyperMD-list-line-1) + .HyperMD-list-line-1,
+.mod-cm6 .HyperMD-list-line-1 + .HyperMD-list-line-1:has(+ .HyperMD-list-line-2) {
 	padding-top: 10px;
 }
 
