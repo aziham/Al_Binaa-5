@@ -126,5 +126,13 @@
       ],
       "key": "Numpad6"
     }
+  ],
+  "metaedit:metaEditRun": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "M"
+    }
   ]
 }
