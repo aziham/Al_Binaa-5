@@ -34,6 +34,10 @@
 .markdown-source-view.mod-cm6 .cm-content {
 	caret-color: var(--color-accent);
 }
+.cm-s-obsidian .cm-cursor, .cm-s-obsidian .cm-dropCursor {
+	border-left: 2px solid var(--color-accent);
+	margin-left: -1px;
+}
 
 /* Note Title */
 .cm-sizer .inline-title {
