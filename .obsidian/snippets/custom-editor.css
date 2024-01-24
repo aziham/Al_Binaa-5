@@ -1,6 +1,10 @@
 /* Web Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+@font-face {
+	font-family: 'KFGQPC HAFS Uthmanic Script';
+	src: url('https://quran.com/fonts/quran/hafs/uthmanic_hafs/UthmanicHafs1Ver18.woff2') format('woff2');
+}
 
 :root {
 	/* Colors */
@@ -215,6 +219,8 @@ body .cm-active.HyperMD-quote::before {
 	--callout-color: var(--ayah-callout-color);
 	border: solid var(--orange) 1px;
 	border-radius: 13px;
+	font-family: "KFGQPC HAFS Uthmanic Script";
+	font-size: 23px;
 }
 .markdown-source-view.mod-cm6 .cm-embed-block:has(.callout[data-callout="ayah"]) {
 	padding-top: 10px;
