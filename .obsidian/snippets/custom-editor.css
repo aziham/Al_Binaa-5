@@ -1,11 +1,3 @@
-/* Web Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
-@font-face {
-	font-family: 'KFGQPC HAFS Uthmanic Script';
-	src: url('https://quran.com/fonts/quran/hafs/uthmanic_hafs/UthmanicHafs1Ver18.woff2') format('woff2');
-}
-
 :root {
 	/* Colors */
 	--editor-background: #d5a76f;
