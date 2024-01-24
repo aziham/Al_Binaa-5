@@ -37,14 +37,14 @@
 
 /* Note Title */
 .cm-sizer .inline-title {
-	font-family: "Hanimation Arabic";
+	font-family: "Kalligraaf";
 	margin: 0 50px 50px;
 	text-align: center;
 	font-weight: 400;
 	color: var(--base-red);
 }
 .is-mobile .cm-sizer .inline-title {
-	font-family: "Almarai";
+	font-family: "Kalligraaf";
 	margin: 0 0 50px;
 	line-height: 1.3;
 }
