@@ -44,7 +44,6 @@
 	color: var(--base-red);
 }
 .is-mobile .cm-sizer .inline-title {
-	font-family: "Kalligraaf";
 	margin: 0 0 50px;
 	line-height: 1.3;
 }
