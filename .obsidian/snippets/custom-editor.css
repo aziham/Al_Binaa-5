@@ -232,6 +232,9 @@ body .cm-active.HyperMD-quote::before {
 
 
 /* Frontmatter cssClasses */
-.is-ltr div.cm-editor {
+.is-ltr .cm-editor {
     direction: ltr;
+}
+.is-ltr.markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
+	font-family: "FiraCode Nerd Font";
 }
