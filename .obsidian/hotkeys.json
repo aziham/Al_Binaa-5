@@ -134,5 +134,24 @@
       ],
       "key": "M"
     }
-  ]
+  ],
+  "editor:toggle-checklist-status": [],
+  "editor:insert-wikilink": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ],
+  "editor:insert-link": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ],
+  "obsidian-editor-shortcuts:selectAllOccurrences": []
 }
