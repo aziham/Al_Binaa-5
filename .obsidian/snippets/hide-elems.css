@@ -12,3 +12,10 @@
 .status-bar {
 	display: none;
 }
+
+/* Hide donation sections from plugins */
+.vertical-tab-content-container .setting-item.setting-donate,
+.vertical-tab-content-container .setting-item:has( .setting-item-control img[alt="Buy Me a Coffee at ko-fi.com"]),
+.vertical-tab-content-container .setting-item:has( .setting-item-control img[alt="Buy Me a Coffee at ko-fi.com"]) ~ div[align="center"] {
+	display: none;
+}
