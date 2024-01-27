@@ -10,9 +10,10 @@
 	--blue: #005a70;
 	--orange: #ad4200;
 	--purple: #5c2d7e;
-	--gray: #2e4363;
+	--dark-blue: #2e4363;
 	--highlighter-yellow: hsla(43, 100%, 45%, 0.6);
 	--ayah-callout-color: 173, 66, 0;
+	--hadith-callout-color: 173, 66, 0;
 
 	/* Cursor */
 	--custom-cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(45,65,100)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-cursor"><path d="M17 22h-1a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h1"/><path d="M7 22h1a4 4 0 0 0 4-4v-1"/><path d="M7 2h1a4 4 0 0 1 4 4v1"/></svg>') 10 10, text;
@@ -71,7 +72,7 @@
 	color: var(--purple);
 }
 .HyperMD-header .cm-header-6 {
-	color: var(--gray);
+	color: var(--dark-blue);
 }
 .markdown-source-view.mod-cm6 .HyperMD-header:hover > .cm-fold-indicator .collapse-indicator,
 .markdown-source-view.mod-cm6 .HyperMD-header > .cm-fold-indicator.is-collapsed .collapse-indicator {
@@ -110,10 +111,10 @@
 
 /* Lists */
 .cm-s-obsidian .cm-formatting-list {
-	color: var(--gray);
+	color: var(--dark-blue);
 }
 .list-bullet:after {
-	background-color: var(--gray);
+	background-color: var(--dark-blue);
 }
 .list-collapse-indicator:hover ~ .list-bullet:after, .cm-fold-indicator:hover ~ .list-bullet:after, .list-collapse-indicator:hover ~ .cm-formatting-list .list-bullet:after, .cm-fold-indicator:hover ~ .cm-formatting-list .list-bullet:after {
     background-color: var(--list-marker-color-hover);
@@ -134,7 +135,7 @@
 /* Checkbox */
 input[type=checkbox] {
     border-radius: 7px;
-    border: 2px solid var(--gray);
+    border: 2px solid var(--dark-blue);
     transition: box-shadow 0.15s ease-in-out;
 }
 input[type=checkbox]:hover {
@@ -145,11 +146,11 @@ input[type=checkbox]:checked {
     border-color: var(--checkbox-green)
 }
 input[type=checkbox]:checked:after {
-    background-color: var(--gray);
+    background-color: var(--dark-blue);
 }
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"], .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
     text-decoration: var(--checklist-done-decoration);
-    color: var(--gray);
+    color: var(--dark-blue);
 }
 input[type=checkbox]:checked:hover {
     background-color: var(--checkbox-green);
@@ -162,7 +163,7 @@ iframe {
 	border-radius: 10px;
 }
 .cm-qualifier, .cm-string, .cm-string-2 {
-	color: var(--gray);
+	color: var(--dark-blue);
 }
 .cm-tag {
 	color: var(--base-red);
@@ -174,7 +175,7 @@ iframe {
 /* Links */
 .cm-s-obsidian span.cm-url,
 .cm-s-obsidian span.cm-url:hover {
-	color: var(--gray);
+	color: var(--dark-blue);
 }
 .markdown-source-view.mod-cm6 .is-unresolved {
 	color: darkslategray;
@@ -206,34 +207,53 @@ body .cm-active.HyperMD-quote::before {
 }
 
 /* Callouts */
-.callout[data-callout="ayah"] {
-	--callout-color: var(--ayah-callout-color);
-	border: solid var(--orange) 1px;
-	border-radius: 13px;
-	font-family: "KFGQPC HAFS Uthmanic Script";
-	font-size: 23px;
-}
-.markdown-source-view.mod-cm6 .cm-embed-block:has(.callout[data-callout="ayah"]) {
+.markdown-source-view.mod-cm6 .cm-embed-block {
 	padding-top: 10px;
 }
-.markdown-source-view.mod-cm6 .cm-embed-block:has(.callout[data-callout="ayah"]):hover {
+.markdown-source-view.mod-cm6 .cm-embed-block:has(.callout):hover {
 	box-shadow: none;
 	cursor: inherit;
 }
-.callout[data-callout="ayah"] .callout-title {
+.markdown-source-view.mod-cm6 .cm-embed-block:has(.callout) svg {
 	display: none;
 }
-.markdown-source-view.mod-cm6 .cm-embed-block:has(.callout[data-callout="ayah"]) svg {
-	stroke: var(--gray);
-}
-.markdown-source-view.mod-cm6 .cm-embed-block:has(.callout[data-callout="ayah"]) .edit-block-button {
-	top: 14px;
-}
-.callout[data-callout="ayah"] .callout-content p mark {
+.callout .callout-content p mark {
 	background-color: unset;
-	color: var(--base-red);
 	font-weight: bold;
 }
+.callout {
+	border: solid var(--orange) 1px;
+	border-radius: 13px;
+	font-size: 23px;
+}
+.callout[data-callout="ayah"] .callout-title,
+.callout[data-callout="hadith"] .callout-title {
+	display: none;
+}
+/* Ayah */
+.callout[data-callout="ayah"] {
+	--callout-color: var(--ayah-callout-color);
+	font-family: "KFGQPC HAFS Uthmanic Script";
+}
+.callout[data-callout="ayah"] .callout-content p mark {
+	color: var(--base-red);
+}
+/* Hadith */
+.callout[data-callout="hadith"] {
+	--callout-color: var(--hadith-callout-color);
+	font-family: "Lotus Linotype";
+}
+.callout[data-callout="hadith"] .callout-content p mark {
+	color: var(--orange);
+}
+.callout[data-callout="hadith"] .callout-content hr {
+	border-color: hsla(25, 100%, 35%, 0.5);
+}
+.callout[data-callout="hadith"] .callout-content hr ~ p {
+	color: var(--dark-blue);
+	font-size: 18px;
+}
+
 
 
 /* Frontmatter cssClasses */

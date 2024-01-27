@@ -10,7 +10,8 @@
     "font_Almarai",
     "font_Tajawal",
     "font_Kalligraaf",
-    "rtl-fixes"
+    "rtl-fixes",
+    "font_Lotus_Linotype"
   ],
   "cssTheme": "",
   "theme": "obsidian",
