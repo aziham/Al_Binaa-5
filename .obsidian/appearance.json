@@ -9,7 +9,8 @@
     "font_UthmanicHafs1Ver18",
     "font_Almarai",
     "font_Tajawal",
-    "font_Kalligraaf"
+    "font_Kalligraaf",
+    "rtl-fixes"
   ],
   "cssTheme": "",
   "theme": "obsidian",

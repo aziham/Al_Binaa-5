@@ -1,0 +1,4 @@
+/* Fix reading mode bullets going to the left instead of the right (RTL) */
+.markdown-rendered .list-bullet {
+	float: right;
+}

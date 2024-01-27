@@ -229,6 +229,11 @@ body .cm-active.HyperMD-quote::before {
 .markdown-source-view.mod-cm6 .cm-embed-block:has(.callout[data-callout="ayah"]) .edit-block-button {
 	top: 14px;
 }
+.callout[data-callout="ayah"] .callout-content p mark {
+	background-color: unset;
+	color: var(--base-red);
+	font-weight: bold;
+}
 
 
 /* Frontmatter cssClasses */

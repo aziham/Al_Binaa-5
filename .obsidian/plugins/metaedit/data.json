@@ -20,6 +20,6 @@
     "boards": []
   },
   "UIElements": {
-    "enabled": true
+    "enabled": false
   }
 }
