@@ -121,7 +121,8 @@
     box-shadow: 0 0 0 4px var(--hover-red);
 }
 .HyperMD-list-line:not(.HyperMD-list-line-1) + .HyperMD-list-line-1,
-.mod-cm6 .HyperMD-list-line-1 + .HyperMD-list-line-1:has(+ .HyperMD-list-line-2) {
+.mod-cm6 .HyperMD-list-line-1 + .HyperMD-list-line-1:has(+ .HyperMD-list-line-2),
+.cm-embed-block.cm-callout + .HyperMD-list-line {
 	padding-top: 10px;
 }
 
@@ -191,7 +192,7 @@ iframe {
 .markdown-source-view.mod-cm6 .cm-url .cm-underline:hover,
 .markdown-source-view.mod-cm6 .cm-link:hover,
 .markdown-source-view.mod-cm6 .is-unresolved:hover {
-	color: var(--base-red);
+	color: var(--red);
 }
 
 /* Focus active line */
@@ -230,31 +231,39 @@ body .cm-active.HyperMD-quote::before {
 .callout[data-callout="hadith"] .callout-title {
 	display: none;
 }
+.callout[data-callout="ayah"] .callout-content p mark,
+.callout[data-callout="hadith"] .callout-content p mark {
+	color: var(--base-red);
+}
 /* Ayah */
 .callout[data-callout="ayah"] {
 	--callout-color: var(--ayah-callout-color);
 	font-family: "KFGQPC HAFS Uthmanic Script";
-}
-.callout[data-callout="ayah"] .callout-content p mark {
-	color: var(--base-red);
 }
 /* Hadith */
 .callout[data-callout="hadith"] {
 	--callout-color: var(--hadith-callout-color);
 	font-family: "Lotus Linotype";
 }
-.callout[data-callout="hadith"] .callout-content p mark {
-	color: var(--orange);
+.callout[data-callout="hadith"] .callout-content em {
+	font-style: unset;
+	background-color: hsla(35, 65%, 55%, 0.8);
 }
 .callout[data-callout="hadith"] .callout-content hr {
 	border-color: hsla(25, 100%, 35%, 0.5);
 }
-.callout[data-callout="hadith"] .callout-content hr ~ p {
-	color: var(--dark-blue);
-	font-size: 18px;
+.callout[data-callout="hadith"] .callout-content hr ~ ul,
+.callout[data-callout="hadith"] .callout-content ul li::marker {
+	color: hsla(0, 0%, 0%, 0.7);
 }
-
-
+.callout[data-callout="hadith"] .callout-content hr ~ ul {
+	font-weight: bold;
+	font-size: 18px;
+	padding-inline-start: 20px;
+}
+.callout[data-callout="hadith"] .callout-content ul li::marker {
+	font-size: 13px;
+}
 
 /* Frontmatter cssClasses */
 .is-ltr .cm-editor {
