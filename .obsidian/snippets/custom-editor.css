@@ -11,7 +11,7 @@
 	--orange: #ad4200;
 	--purple: #5c2d7e;
 	--dark-blue: #2e4363;
-	--highlighter-yellow: hsla(43, 100%, 45%, 0.6);
+	--highlighter-color: hsla(35, 65%, 55%, 0.8);
 	--ayah-callout-color: 173, 66, 0;
 	--hadith-callout-color: 173, 66, 0;
 
@@ -89,7 +89,7 @@
 
 /* Highlighter */
 .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
-	background-color: var(--highlighter-yellow);
+	background-color: var(--highlighter-color);
 	color: var(--base-black);
 	padding: 3px 5px 5px;
 	border-radius: 20px;
@@ -247,7 +247,7 @@ body .cm-active.HyperMD-quote::before {
 }
 .callout[data-callout="hadith"] .callout-content em {
 	font-style: unset;
-	background-color: hsla(35, 65%, 55%, 0.8);
+	background-color: var(--highlighter-color);
 }
 .callout[data-callout="hadith"] .callout-content hr {
 	border-color: hsla(25, 100%, 35%, 0.5);
