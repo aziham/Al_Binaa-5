@@ -55,6 +55,12 @@
         "Alt"
       ],
       "key": "T"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "K"
     }
   ],
   "app:delete-file": [
@@ -161,6 +167,23 @@
         "Shift"
       ],
       "key": "O"
+    }
+  ],
+  "obsidian-editor-shortcuts:undo": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "/"
+    }
+  ],
+  "obsidian-editor-shortcuts:redo": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "/"
     }
   ]
 }
