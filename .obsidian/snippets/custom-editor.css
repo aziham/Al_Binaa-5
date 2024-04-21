@@ -178,12 +178,15 @@ iframe {
 .cm-s-obsidian span.cm-url:hover {
 	color: var(--dark-blue);
 }
-.markdown-source-view.mod-cm6 .is-unresolved {
+.markdown-source-view.mod-cm6 .is-unresolved a.cm-underline {
 	color: darkslategray;
+	text-decoration-color: unset;
 }
 .cm-s-obsidian span.cm-footref, .cm-s-obsidian span.cm-blockid {
 	color: var(--base-red);
 }
+a,
+a:hover,
 .cm-s-obsidian span.cm-hmd-internal-link,
 .cm-s-obsidian span.cm-hmd-internal-link:hover,
 .cm-s-obsidian span.cm-link,
